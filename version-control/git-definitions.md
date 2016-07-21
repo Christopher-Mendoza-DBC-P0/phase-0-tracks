@@ -13,3 +13,5 @@ A commit is placing a file that is ready to be merged into the program.  A good 
 
 * What is a merge conflict?
 a merge conflict in when code has been written into an area where there is other code there and it needs to be fixed. (ie. which code is correct.)
+
+adding a small change!!!!
