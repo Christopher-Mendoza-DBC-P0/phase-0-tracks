@@ -1,0 +1,38 @@
+#Christopher Mendoza
+
+#Phase 0 - 4.2 - Release 0
+#upon entering elevator
+  #turn around 180 degrees
+  #search for squares that have numbers on it.
+  #upon finding square that have numbers on it,
+  #move such that robotic arms can reach the numbers,
+  #lookup floor number of owner
+  #find floor number of owner on elevator panel
+  #move robotic arm such that it can push the floor number of owner
+  #push the number with robotic arm
+  #return arm to original position
+#end
+
+#Phase 0 - 4.2 - Release 1
+#Making morning chai tea
+
+#Fill Pot with water
+#Push button on pot to boil water
+#wait 1 minute
+#while waiting 1 minute
+#get tea mug from cabinet
+#When 1 minute is complete
+#pour 8oz of water from pot to tea mug
+#get tea
+#put tea in tea mug
+#wait 3 min
+#while waiting 3 min. get honey and milk
+#when 3 min has elapsed
+#put 1 oz of honey and 4 oz of milk into mug
+#get spoon
+#put spoon in tea mug
+#stir spoon
+#remove spoon
+#give tea to owner
+
+end
