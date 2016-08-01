@@ -34,3 +34,10 @@ adoption = gets.chomp
 
 puts "What is the estimated age of the hamster?"
 age = gets.to_i
+
+puts "Thank you, here is a summary of your entries
+      Name: #{name}
+      Volume: #{volume}
+      Fur Color: #{fur_color}
+      Adoption Eligible: #{adoption}
+      Age: #{age}"
