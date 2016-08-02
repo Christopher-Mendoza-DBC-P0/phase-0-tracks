@@ -1,43 +1,38 @@
-# 4-3-r1 - Christopher Mendoza
+#4.3 - Christopher Mendoza & Rachael Lunney
 
-=begin
-# hamster's name
-# volume level from 1 to 10
-# fur color
-# good candidate for adoption
-# estimated age = nil
-=end
-
-
-name = nil
-volume = nil
-fur_color = nil
-adoption = nil
-age = nil
-
-puts "Enter name of hamster."
+#Release 1 - Ask questions and store inputs in variables.
+puts "What is the hamster's name?"
 name = gets.chomp
 
-puts "Enter volume level. (1-10: whole numbers only)"
+puts "What volume level? (1-10)"
 volume = gets.to_i
 
-puts "Enter the fur color."
+puts "What is the fur color"
 fur_color = gets.chomp
 
-puts "Is this hamster a candidate for adoption? ( Y or N )"
+puts "Is good candidate for adoption (yes/no)"
 adoption = gets.chomp
-  if adoption == "Y"
+adoption.downcase!
+case adoption
+  when "y", "yes"
     adoption = true
   else
     adoption = false
-  end
+end
 
-puts "What is the estimated age of the hamster?"
-age = gets.to_i
+puts "What is the estimated age?"
+age = gets.chomp
+if age == ""
+  age = nil
+else
+  age = age.to_i
+end
 
-puts "Thank you, here is a summary of your entries
-      Name: #{name}
-      Volume: #{volume}
-      Fur Color: #{fur_color}
-      Adoption Eligible: #{adoption}
-      Age: #{age}"
+#Release 2 - Is convert variables into the correct variable type. We thought everything was good but will make adoption a boolean.
+
+#Release 3 - Print to the Console
+puts "Hamster name: #{name}"
+puts "Volume level: #{volume}"
+puts "Fur color: #{fur_color}"
+puts "Good for adoption: #{adoption}"
+puts "Estimated age: #{age}"
