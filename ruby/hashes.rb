@@ -64,9 +64,3 @@ if change_entries == 'y'
   else
     "Thank you"
 end
-
-
-
-
-
-
