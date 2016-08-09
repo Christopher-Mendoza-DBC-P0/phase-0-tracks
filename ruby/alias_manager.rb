@@ -1,4 +1,4 @@
-#5.6- Christopher Mendoza
+#5.6 - Christopher Mendoza
 
 #Release 0
 
@@ -22,7 +22,7 @@ def next_letter(reversed_name)
   reversed_name_array.map! { |letter|
     if vowels.index(letter) != nil
       new_vowel = vowels.index(letter) + 1
-      p letter = vowels[new_vowel]
+      letter = vowels[new_vowel]
     elsif consonants.index(letter) != nil
       new_consonant = consonants.index(letter) + 1
       letter = consonants[new_consonant]
@@ -33,9 +33,16 @@ def next_letter(reversed_name)
   reversed_name_array_joined = reversed_name_array.join
 end
 
+#Release 1 - UI
+##Provide a user interface that lets a user enter a name and get a fake name back. Let the user do this repeatedly until they decide to quit by typing 'quit'. (They might just hit Enter to continue.)
 
+loop do
+  puts "Please Enter the Name you would like to encrypt, ('quit' to stop)"
+  name = gets.chomp
+  break if name == 'quit'
+  reversed_name = swap_first_last(name)
+  encrypted_name = next_letter(reversed_name)
+  puts "The encrypted name is #{encrypted_name}"
+end
 
-#driver code
-p reversed_name = swap_first_last("Felicia Torres")
-p next_letter(reversed_name)
 
