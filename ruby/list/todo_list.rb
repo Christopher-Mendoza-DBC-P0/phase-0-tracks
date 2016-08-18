@@ -1,3 +1,5 @@
+#Christopher Mendoza && Singh Arsy
+
 class TodoList
    attr_reader
    attr_accessor :list
